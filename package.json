@@ -1,0 +1,35 @@
+{
+  "name": "programming-challenge-april21",
+  "version": "1.0.0",
+  "description": "Web Project where users can search for some informations about movies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdSuzs/programming-challenge-april21.git"
+  },
+  "author": "Ada Suzany Franco de Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdSuzs/programming-challenge-april21/issues"
+  },
+  "homepage": "https://github.com/AdSuzs/programming-challenge-april21#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^4.6.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "fast-csv": "^4.3.6",
+    "jquery": "^3.6.0",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^2.0.7",
+    "popper.js": "^1.16.1",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+  }
+}
