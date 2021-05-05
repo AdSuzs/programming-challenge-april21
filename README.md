@@ -9,12 +9,16 @@ This challenge consists of a web applicantion and api development. Read the inst
 ## Getting Started
 ### Database
 
-The files ```movie.csv``` and ```rating.csv``` from [MovieLens](https://grouplens.org/datasets/movielens/) is updated at ```/dataset```. To execute the dataset treatment execute inside ```/dataset``` directory:
+The files ```movie.csv``` and ```rating.csv``` from [MovieLens](https://grouplens.org/datasets/movielens/) is updated at ```/dataset```. To execute the dataset treatment execute:
+$ cd database
 $ python3 parser.py
 
 That will create ```genres.csv``` file.
 
 SQLite is used, so the database its the file ```database.sqlite3```.
+
+After create de database we need to populate it, executing:
+$ node db.js
 
 ### Prerequisites
 
@@ -42,5 +46,17 @@ The following technologies were used in this project:
 - [Bootstrap](https://getbootstrap.com/)
 - [@fortawesome/fontawesome-free](https://fontawesome.com/)
 
+## Screenshots
+<h1 align='center'>
+	<img src="./public/screenshots/index.png"/>
+</h1>
+
+<h1 align='center'>
+	<img src="./public/screenshots/rating.png"/>
+</h1>
+
+<h1 align='center'>
+	<img src="./public/screenshots/movies.png"/>
+</h1>
 
 
