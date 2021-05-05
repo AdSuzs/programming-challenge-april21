@@ -4,9 +4,9 @@ const mainController = require('../app/controllers/main');
 
 router.get('/',  mainController.index)
 
-router.get('/:year&:genre',  mainController.search_year_genre)
+router.get('/movie',  mainController.search_year_genre)
 
-router.get('/:num',  mainController.search_rating)
+router.get('/rating',  mainController.search_rating)
 
 
 

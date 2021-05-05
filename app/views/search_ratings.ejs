@@ -1,6 +1,18 @@
+<h2>Top Best <%= number %> Movies </h2>
+
+<div class="search">
+  <form action="/rating" method="get" class="form-inline my-2 my-lg-0">
+    <label class="control-label" for="searchRating">Rank the top:</label>
+    <input class="form-control mr-sm-2" id="searchRating" name="num" type="text" placeholder="Number to rank">
+    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
+
+<ul class="list-group">
 <% movie.forEach(function(movies) { %>
-  <div>
-    <%= movies.rate %>
-    <%= movies.title %>
-  </div>
-<% }); %>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <%= movies.Movie.title%> 
+      <span class="badge badge-primary badge-pill"> <p> <%=(movies.rate).toFixed(2)%> </p></span>
+    </li>
+    <% }); %>
+  </ul>
