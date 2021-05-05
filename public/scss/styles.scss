@@ -6,11 +6,25 @@ $space-more-big: 80px;
 $primary-text: rgba(27, 27, 27, 0.897);
 $secondary-text: rgb(80, 80, 80);
 
+.custom-select{
+    margin-right: 8px;
+}
+.search-methods{
+    padding: 10px;
+}
+
+.search{
+    margin: 30px 30px;
+}
+.control-label{
+    margin-right: 20px;
+}
 
 div {
     color: $color;
 }
 h2{
+    padding-top: 5%;
     margin: $space-small 0;
 }
 .main-content{
