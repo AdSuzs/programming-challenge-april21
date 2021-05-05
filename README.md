@@ -90,12 +90,13 @@ To create and populate database we followed those steps:
 
 The following technologies were used in this project:
 - [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/pt-br/)
 - [EJS](https://ejs.co/)
 - [Sequelize](https://sequelize.org/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Sass](https://sass-lang.com/)
 - [Bootstrap](https://getbootstrap.com/)
-- [@fortawesome/fontawesome-free](https://fontawesome.com/)
+- [Pandas](https://pandas.pydata.org/)
 
 ## Screenshots
 <h1 align='center'>
