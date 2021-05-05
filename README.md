@@ -23,7 +23,7 @@ Fist you need to clone this repository with: `` git clone `` passing the url of 
 
 This project needs the following dependencies:
 ```
-"@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4.6.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
@@ -75,15 +75,15 @@ To create and populate database we followed those steps:
 - Download files ``movie.csv`` and ``rating.csv`` from [MovieLens](https://grouplens.org/datasets/movielens/) and save at ``/dataset``. 
 - Execute the dataset treatment with:
 
-$ cd database
+	$ cd database
 
-$ python3 parser.py
+	$ python3 parser.py
 
-That will create ``genres.csv`` file.
+	That will create ``genres.csv`` file and update ``movie.csv`` and ``rating.csv``.
 
 - After create the migrations with ``npx sequelize db:migrate`` we needed to populate it, executing:
 
-$ node db.js
+	$ node db.js
 
 
 ## Technologies
