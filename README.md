@@ -1,10 +1,12 @@
 # Programming Challenge
 
-This challenge consists of a web applicantion and api development. Read the instructions carefully to execute the solution.
+This challenge consists of developing a web application. Read the instructions to execute the solution.
+
+By: Ada Suzany Franco de Araújo
 
 ## Status
 
-:construction: In construction
+:rocket: Ready :rocket: 
 
 ## Getting Started
 ### Prerequisites
@@ -15,33 +17,74 @@ Before start, you need to get installed those tools:
 - [Node.js](https://nodejs.org/en).
 
 
+### Executing
+
+Fist you need to clone this repository with: `` git clone `` passing the url of this repository.
+
+This project needs the following dependencies:
+```
+"@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^4.6.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "fast-csv": "^4.3.6",
+    "jquery": "^3.6.0",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^2.0.7",
+    "popper.js": "^1.16.1",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+    
+```
+
+To install all them execute:
+
+$ npm install
+
+To run the application, execute:
+
+$ npm start
+
+Then, open your browser. The application is running at port 4444:
+`` http://localhost:4444/ ``
+
+
+### API Requests
+
+```
+Endpoint:
+GET http://localhost:4444/ 
+
+To search for a movie:
+GET http://localhost:4444/movie?year={year}&genre={genre} 
+
+To rank movies:
+GET http://localhost:4444/rating?num={number}
+
+```
+
 ### Database
 
-The files ``movie.csv`` and ``rating.csv`` from [MovieLens](https://grouplens.org/datasets/movielens/) is updated at ``/dataset``. To execute the dataset treatment execute:
+SQLite is used, so the database is already populated and is the file:
+ ``database.sqlite3``. Which is ready to use.
+
+To create and populate database we followed those steps:
+
+- Download files ``movie.csv`` and ``rating.csv`` from [MovieLens](https://grouplens.org/datasets/movielens/) and save at ``/dataset``. 
+- Execute the dataset treatment with:
+
 $ cd database
+
 $ python3 parser.py
 
 That will create ``genres.csv`` file.
 
-SQLite is used, so the database its the file ``database.sqlite3``.
-
-After create de database we need to populate it, executing:
+- After create the migrations with ``npx sequelize db:migrate`` we needed to populate it, executing:
 
 $ node db.js
 
-
-### Executing
-
-Install all the dependences execute:
-
-$ npm install
-
-Run app, execute:
-
-$ npm start
-
-Then, open your browser. Application is runnig at port 4444:
-`` http://localhost:4444/ ``
 
 ## Technologies
 
